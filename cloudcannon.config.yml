@@ -1,10 +1,14 @@
-# Be explicit: Tell CloudCannon the source and output are the same root directory.
 source: .
-output_path: .
-
-# Find all HTML files in the root and treat them as site pages.
 collections_config:
   pages:
     path: .
-    output: true
-    glob: ["*.html"]
+    glob:
+      - '*.html'
+    icon: notes
+    url: /[path]
+    disable_url: false
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+timezone: Etc/UTC
+output_path: .
