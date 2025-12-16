@@ -8,4 +8,6 @@ markdown:
 collections_config:
   pages:
     path: ''
+    glob: 
+      - '**/*.html'
     icon: wysiwyg
