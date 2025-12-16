@@ -1,14 +1,848 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Longevity Plan AI | Personalized Health and Performance Optimization</title>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Fira Code for API section -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="main.js"></script>
+    
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+
+    <!-- Floating Toggle Bar -->
+    <div class="floating-toggle-bar">
+        <div class="toggle-pill active" onclick="togglePricing('individuals')">For Individuals</div>
+        <div class="toggle-pill" onclick="togglePricing('enterprise')">For Enterprise</div>
+    </div>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNav">
+        <span class="mobile-nav-close" onclick="toggleMobileNav()">&times;</span>
+        <ul class="mobile-nav-links">
+            <li><a href="#about" onclick="toggleMobileNav()">About</a></li>
+            <li><a href="#innovations" onclick="toggleMobileNav()">Science</a></li>
+            <li><a href="#digital" onclick="toggleMobileNav()">Platform</a></li>
+            <li><a href="#pricing" onclick="toggleMobileNav()">Membership</a></li>
+            <li><a href="#team" onclick="toggleMobileNav()">Team</a></li>
+            <li><button class="btn" onclick="openModal(); toggleMobileNav()">Join Now</button></li>
+        </ul>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="https://zyq.has.mybluehost.me/website_c2dbbc7a/wp-content/uploads/2025/11/Longevity-Plan-AI-Logo-Light.webp" alt="Longevity Plan AI" class="logo-desktop">
+                <img src="https://zyq.has.mybluehost.me/website_c2dbbc7a/wp-content/uploads/2025/11/Longevity-Plan-Icon.webp" alt="Longevity Plan AI" class="logo-mobile">
+            </a>
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#innovations">Science</a>
+                <a href="#digital">Platform</a>
+                <a href="#pricing">Membership</a>
+                <a href="#team">Team</a>
+            </nav>
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <button class="btn-nav individual-only" onclick="openModal()">Join Now</button>
+                <button class="btn-nav enterprise-only" onclick="openModal()">Contact Sales</button>
+                <div class="mobile-menu-btn" onclick="toggleMobileNav()"><i class="fas fa-bars"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero (Individual) -->
+    <section class="hero individual-only">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Step into your<br>ageless future</h1>
+                <p>Predict, optimize, and personalize your health, recovery, and performance with our expert AI-driven support and precision medicine protocols.</p>
+                <div class="hero-btns">
+                    <button class="btn" onclick="openModal()"><span>Join Now</span></button>
+                    <a href="#innovations" class="btn-video"><i class="fas fa-play-circle"></i> Watch Video</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero (Enterprise) -->
+    <section class="hero enterprise-only">
+        <div class="container">
+            <div class="hero-content">
+                <h4>ENTERPRISE SOLUTIONS</h4>
+                <h1>Empower Your Organization's Health</h1>
+                <p>Deliver the future of longevity and precision medicine to your installed user base or executive team with our secure, scalable API and coaching platform. For Personalized Health and Performance Optimization.</p>
+                <div class="hero-btns">
+                    <button class="btn" onclick="openModal()"><span>Contact Sales</span></button>
+                    <a href="#innovations" class="btn-video"><i class="fas fa-play-circle"></i> Watch Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="trusted-section section-alt">
+        <div class="container">
+            <span class="trusted-label">Trusted by industry leaders</span>
+            <div class="marquee">
+                <div class="marquee-content">
+                    <img src="Images/Longevity Plan Trusted by.png" alt="Trusted Companies" width="1500" height="150">
+                </div>
+                <div class="marquee-content" aria-hidden="true">
+                    <img src="Images/Longevity Plan Trusted by.png" alt="Trusted Companies" width="1500" height="150">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Serve Section (Individual Only) -->
+    <section class="innovations-section section-std individual-only" id="about" style="padding-bottom: 50px;">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 60px;">
+                <h4>Tailored for Excellence</h4>
+                <h2>Who We Serve</h2>
+            </div>
+            <div class="precision-grid" style="margin-top: 0;">
+                <div class="bento-box" style="min-height: 300px;">
+                    <div style="z-index: 2;">
+                        <i class="fas fa-running bento-icon-small"></i>
+                        <div class="bento-title">Athletes & Executives</div>
+                        <div class="bento-desc">For aspirational athletes and health-conscious executives who need truly personalized performance planning. We integrate biomarkers, wearables (Oura, Viome), and medical records to enable peak earning capacity and physical resilience.</div>
+                        <a href="#pricing" class="btn" style="margin-top: 20px; font-size: 0.8rem; padding: 10px 20px;">Join Now</a>
+                    </div>
+                </div>
+                <div class="bento-box" style="min-height: 300px;">
+                    <div style="z-index: 2;">
+                        <i class="fas fa-user-md bento-icon-small"></i>
+                        <div class="bento-title">Coaches & Providers</div>
+                        <div class="bento-desc">Empower your practice with data. Our platform enables human coaches to be more effective by consolidating fragmented data into a single, actionable Digital Twin for your clients.</div>
+                        <a href="#pricing" class="btn" style="margin-top: 20px; font-size: 0.8rem; padding: 10px 20px;">Join Now</a>
+                    </div>
+                </div>
+                <div class="bento-box" style="min-height: 300px;">
+                    <div style="z-index: 2;">
+                        <i class="fas fa-code-branch bento-icon-small"></i>
+                        <div class="bento-title">Enterprise & API</div>
+                        <div class="bento-desc">Enhance your app with our white-label Digital Twin API. Provide your installed user base with advanced AI integration for more personalized recommendations and deeper engagement.</div>
+                        <a href="#pricing" class="btn" style="margin-top: 20px; font-size: 0.8rem; padding: 10px 20px;">Join Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases (Enterprise Only) -->
+    <section class="innovations-section section-std enterprise-only" style="padding-bottom: 50px;">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 60px;">
+                <h4>Tailored for Excellence</h4>
+                <h2>Enterprise Use Cases</h2>
+            </div>
+            <div class="precision-grid" style="margin-top: 0;">
+                <div class="bento-box" style="min-height: 300px;">
+                    <div style="z-index: 2;">
+                        <i class="fas fa-building bento-icon-small"></i>
+                        <div class="bento-title">Corporate Wellness</div>
+                        <div class="bento-desc">Empower your executive team with truly personalized performance planning. We integrate biomarkers, wearables, and medical records to enable peak earning capacity.</div>
+                        <a href="#pricing" class="btn" style="margin-top: 20px; font-size: 0.8rem; padding: 10px 20px;">Contact Sales</a>
+                    </div>
+                </div>
+                <div class="bento-box" style="min-height: 300px;">
+                    <div style="z-index: 2;">
+                        <i class="fas fa-user-md bento-icon-small"></i>
+                        <div class="bento-title">Clinics & Providers</div>
+                        <div class="bento-desc">Empower your practice with data. Our platform enables human coaches to be more effective by consolidating fragmented data into a single, actionable Digital Twin.</div>
+                        <a href="#pricing" class="btn" style="margin-top: 20px; font-size: 0.8rem; padding: 10px 20px;">Contact Sales</a>
+                    </div>
+                </div>
+                <div class="bento-box" style="min-height: 300px;">
+                    <div style="z-index: 2;">
+                        <i class="fas fa-code-branch bento-icon-small"></i>
+                        <div class="bento-title">White-Label API</div>
+                        <div class="bento-desc">Enhance your app with our Digital Twin API. Provide your user base with advanced AI integration for deeper engagement without building the backend yourself.</div>
+                        <a href="#pricing" class="btn" style="margin-top: 20px; font-size: 0.8rem; padding: 10px 20px;">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Innovations Section (Shared) -->
+    <section class="innovations-section section-alt" id="innovations">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 60px;">
+                <h4>Pioneering Science</h4>
+                <h2>Biotechnology & Medtech for Longevity</h2>
+            </div>
+
+            <div class="tabs-header">
+                <button class="tab-btn active" onclick="openTab(event, 'biotech')">Biotech Innovations</button>
+                <button class="tab-btn" onclick="openTab(event, 'medtech')">Therapeutic Tech</button>
+                <button class="tab-btn" onclick="openTab(event, 'ai')">AI Diagnostics</button>
+            </div>
+
+            <!-- Tab 1: Biotech -->
+            <div id="biotech" class="tab-content active">
+                <div class="innovation-card card-biotech">
+                    <div class="card-header-full">
+                        <h2>Advancing Longevity Through Biotechnology</h2>
+                        <p class="feature-desc">Our biotech innovations target aging at its core, using regenerative science and precision therapies to enhance health and vitality.</p>
+                    </div>
+                    <div class="card-body-split">
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <div class="feature-header"><i class="fas fa-dna feature-icon"></i><div class="feature-title">Regenerative Medicine</div></div>
+                                <p class="feature-desc">Cutting-edge treatments that accelerate recovery and enhance physical resilience.</p>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-header"><i class="fas fa-microscope feature-icon"></i><div class="feature-title">Cellular Regeneration</div></div>
+                                <p class="feature-desc">Revitalize your body with therapies that restore cellular function and delay biological aging.</p>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-header"><i class="fas fa-flask feature-icon"></i><div class="feature-title">Molecular Therapies</div></div>
+                                <p class="feature-desc">Innovative solutions targeting biological pathways for optimal health outcomes.</p>
+                            </div>
+                        </div>
+                        <div class="card-visual">
+                            <div class="dna-vertical-wrapper">
+                                <div class="dna-label-group dl-left" style="top: 15%; left: -80px; animation-delay: 0s;"><div class="dna-label">Resilience</div><div class="dna-line"></div></div>
+                                <div class="dna-label-group dl-right" style="top: 35%; right: -80px; animation-delay: 1s;"><div class="dna-line"></div><div class="dna-label">Vitality</div></div>
+                                <div class="dna-label-group dl-left" style="top: 55%; left: -80px; animation-delay: 2s;"><div class="dna-label">Regeneration</div><div class="dna-line"></div></div>
+                                <div class="dna-label-group dl-right" style="top: 75%; right: -80px; animation-delay: 3s;"><div class="dna-line"></div><div class="dna-label">Energy</div></div>
+                                <div class="dna-container" id="dnaContainer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 2: Medtech -->
+            <div id="medtech" class="tab-content">
+                <div class="innovation-card card-medtech">
+                    <div class="card-header-full">
+                        <h2>Transforming Health with Medtech</h2>
+                        <p class="feature-desc">Our medtech solutions deliver precision diagnostics and advanced therapeutic technologies that redefine how health is monitored and optimized.</p>
+                    </div>
+                    <div class="card-body-split">
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <div class="feature-header"><i class="fas fa-heartbeat feature-icon"></i><div class="feature-title">Holistic Optimization</div></div>
+                                <p class="feature-desc">Unify testing, therapies, and expert protocols for measurable health improvements.</p>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-header"><i class="fas fa-tint feature-icon"></i><div class="feature-title">Ozone Therapies</div></div>
+                                <p class="feature-desc">Explore technologies like extracorporeal blood ozone and oxygenation systems.</p>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-header"><i class="fas fa-procedures feature-icon"></i><div class="feature-title">Hyperbaric Solutions</div></div>
+                                <p class="feature-desc">Incorporate cutting-edge devices like robotic systems and hyperbaric oxygen therapy.</p>
+                            </div>
+                        </div>
+                        <div class="card-visual">
+                            <div class="monitor-screen">
+                                <div class="monitor-header"><span>STATUS: OPTIMAL</span><span>ID: L-PLAN-01</span></div>
+                                <div class="monitor-grid">
+                                    <div class="monitor-panel"><div class="mp-label">Heart Rate</div><div class="mp-value" id="hrVal">62 <span class="mp-unit">BPM</span></div></div>
+                                    <div class="monitor-panel"><div class="mp-label">O2 Level</div><div class="mp-value" id="o2Val">99 <span class="mp-unit">%</span></div></div>
+                                    <div class="monitor-panel"><div class="mp-label">HRV</div><div class="mp-value">110 <span class="mp-unit">ms</span></div></div>
+                                    <div class="monitor-panel"><div class="mp-label">Temp</div><div class="mp-value">98.4 <span class="mp-unit">°F</span></div></div>
+                                    <div class="monitor-graph-area">
+                                        <svg width="100%" height="100%" viewBox="0 0 400 100" preserveAspectRatio="none">
+                                            <path class="pulse" d="M0,50 L20,50 L30,40 L40,60 L50,50 L70,50 L80,20 L90,80 L100,50 L130,50 L140,45 L150,55 L160,50 L190,50 L200,10 L210,90 L220,50 L250,50 L260,40 L270,60 L280,50 L310,50 L320,25 L330,75 L340,50 L370,50 L380,45 L390,55 L400,50" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 3: AI -->
+            <div id="ai" class="tab-content">
+                <div class="innovation-card card-ai">
+                    <div class="card-header-full">
+                        <h2>AI-Driven Solutions</h2>
+                        <p class="feature-desc">AI drives LongevityPlan by enabling personalized, data-driven health solutions for extending healthspan and lifespan through digital twins.</p>
+                    </div>
+                    <div class="card-body-split">
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <div class="feature-header"><i class="fas fa-user-circle feature-icon"></i><div class="feature-title">Digital Twin Integration</div></div>
+                                <p class="feature-desc">We integrate biomarkers, wearable data, and medical records to create a dynamic digital twin that predicts and optimizes your health.</p>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-header"><i class="fas fa-brain feature-icon"></i><div class="feature-title">Predictive & Personalized</div></div>
+                                <p class="feature-desc">Our AI incorporates lifestyle data from sources like Oura and Viome to deliver highly personalized recommendations.</p>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-header"><i class="fas fa-mobile-alt feature-icon"></i><div class="feature-title">Optimize Performance</div></div>
+                                <p class="feature-desc">Continuously track adherence and adjust protocols dynamically to maximize your recovery and performance potential.</p>
+                            </div>
+                        </div>
+                        <div class="card-visual">
+                            <!-- RESTORED: Chat Interface Visual -->
+                            <div class="chat-interface">
+                                <div class="chat-messages">
+                                    <div class="chat-row user" style="animation-delay: 0s;">
+                                        <div class="chat-bubble cb-user">Analyze my sleep data.</div>
+                                    </div>
+                                    <div class="chat-row ai" style="animation-delay: 1.5s;">
+                                        <div class="chat-icon"><i class="fas fa-robot"></i></div>
+                                        <div class="chat-bubble cb-ai">Deep sleep +15%. Recovery score 92%.</div>
+                                    </div>
+                                    <div class="chat-row user" style="animation-delay: 3s;">
+                                        <div class="chat-bubble cb-user">Supplements today?</div>
+                                    </div>
+                                    <div class="chat-row ai" style="animation-delay: 4.5s;">
+                                        <div class="chat-icon"><i class="fas fa-robot"></i></div>
+                                        <div class="chat-bubble cb-ai">Added NAD+ and Magnesium for recovery.</div>
+                                    </div>
+                                </div>
+                                <div class="chat-input-mock">
+                                    <span>Ask about your health...</span>
+                                    <div class="chat-send-btn"><i class="fas fa-arrow-up"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Precision Section (Shared) -->
+    <section class="digital-precision-section section-std" id="digital">
+        <div class="container">
+            <div class="text-center" style="max-width: 800px; margin: 0 auto;">
+                <h4>Revolutionizing Healthspan</h4>
+                <h2>Digital Precision & Analytics</h2>
+                <p>Our platform brings together cutting-edge technologies, personalized health strategies, and real-time data to help you take control of your healthspan and performance.</p>
+            </div>
+
+            <div class="precision-grid">
+                <div class="bento-box">
+                    <div style="z-index: 2;">
+                        <i class="fas fa-gem bento-icon-small"></i>
+                        <div class="bento-title">AI-Driven Insights</div>
+                        <div class="bento-desc">Get tailored recommendations based on your health data and progress.</div>
+                    </div>
+                    <!-- Digital Twin Visual (Uploaded Image 1) -->
+                    <div class="visual-container">
+                         <img src="Images/49692c44-a50e-4bdf-ad5f-935aedd969a3.png" alt="AI Driven Insights" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+
+                <div class="bento-box">
+                    <div style="z-index: 2;">
+                        <i class="fas fa-columns bento-icon-small"></i>
+                        <div class="bento-title">Bio Dashboard</div>
+                        <div class="bento-desc">View all your biomarkers, biological age, and daily readiness in one place.</div>
+                    </div>
+                    <!-- Neural Network Visual (Uploaded Image 2) -->
+                    <div class="visual-container">
+                        <img src="Images/9ed52c9a-d69a-4510-b983-d2cf4a2f4346.png" alt="Bio Dashboard" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+
+                <div class="bento-box">
+                    <div style="z-index: 2;">
+                        <i class="fas fa-bullseye bento-icon-small"></i>
+                        <div class="bento-title">Progress Tracking</div>
+                        <div class="bento-desc">Monitor your health improvements with real-time updates and analytics.</div>
+                    </div>
+                    <div class="visual-container">
+                        <div class="chart-blue-container">
+                            <div class="chart-header">This week longevity added:</div>
+                            <div class="chart-main-stat" id="chartMainStat">6 hours, 41 minutes</div>
+                            <div class="chart-bars-area" id="chartBars">
+                                <div class="bar-group" onclick="updateChart(0, '2 hours, 10 minutes')"><div class="v-bar" style="height: 20%;"></div><div class="bar-label">Thu</div></div>
+                                <div class="bar-group" onclick="updateChart(1, '3 hours, 45 minutes')"><div class="v-bar" style="height: 30%;"></div><div class="bar-label">Fri</div></div>
+                                <div class="bar-group" onclick="updateChart(2, '2 hours, 55 minutes')"><div class="v-bar" style="height: 25%;"></div><div class="bar-label">Sat</div></div>
+                                <div class="bar-group" onclick="updateChart(3, '4 hours, 20 minutes')"><div class="v-bar" style="height: 40%;"></div><div class="bar-label">Sun</div></div>
+                                <div class="bar-group" onclick="updateChart(4, '3 hours, 50 minutes')"><div class="v-bar" style="height: 35%;"></div><div class="bar-label">Mon</div></div>
+                                <div class="bar-group" onclick="updateChart(5, '5 hours, 15 minutes')"><div class="v-bar" style="height: 50%;"></div><div class="bar-label">Tue</div></div>
+                                <div class="bar-group" onclick="updateChart(6, '6 hours, 41 minutes')"><div class="v-bar today" style="height: 75%;"></div><div class="bar-label active">Today</div></div>
+                            </div>
+                            <div class="breakdown-list">
+                                <div class="breakdown-item">
+                                    <div class="bd-label"><span>Nutrition Score</span><span>94/100</span></div>
+                                    <div class="bd-bar-bg"><div class="bd-bar-fill" style="width: 94%; background: #86efac;"></div></div>
+                                </div>
+                                <div class="breakdown-item">
+                                    <div class="bd-label"><span>Sleep Quality</span><span>88/100</span></div>
+                                    <div class="bd-bar-bg"><div class="bd-bar-fill" style="width: 88%; background: #60a5fa;"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Journey Section (Individual Only) -->
+    <section class="health-journey-section section-std individual-only">
+        <div class="container">
+            <div class="journey-container">
+                <div class="journey-text">
+                    <h4>Digital Twin</h4>
+                    <h2>Your Health Journey,<br>Simplified in One App</h2>
+                    <p>Elevate your wellness journey with LongevityPlan. Seamlessly integrate data, coaching, and personalized protocols into your daily life.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Access to expert health coaching</li>
+                        <li><i class="fas fa-check-circle"></i> Personalized supplement recommendations</li>
+                        <li><i class="fas fa-check-circle"></i> Evidence-based interventions</li>
+                        <li><i class="fas fa-check-circle"></i> Advanced health tests tracking</li>
+                    </ul>
+                    <button class="btn" style="margin-top: 30px;" onclick="openModal()"><span>Join Now</span></button>
+                </div>
+                <div class="journey-visual">
+                    <!-- New Dark Mode Dashboard -->
+                    <div class="dark-dashboard-ui">
+                        <div class="dd-header">
+                            <div><i class="fas fa-user-circle"></i> 20</div>
+                            <div style="font-weight:600; color:#fff;">TODAY</div>
+                            <div style="opacity:0.7;">77%</div>
+                        </div>
+                        <div class="dd-section">
+                            <div class="dd-label">Stress Monitor</div>
+                            <div style="font-size:0.9rem; margin-bottom:10px;">Low 0.4</div>
+                            <div class="dd-graph-container">
+                                <svg class="dd-graph-line" viewBox="0 0 100 20" preserveAspectRatio="none">
+                                    <polyline points="0,18 10,15 20,10 30,12 40,5 50,8 60,15 70,12 80,5 90,10 100,15" stroke-width="1.5" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="dd-section" style="border:none;">
+                            <div class="dd-label">Strain & Recovery</div>
+                            <div class="dd-strain-row">
+                                <div class="dd-stat-box"><div class="dd-stat-val">21</div><div class="dd-stat-lbl">Strain</div></div>
+                                <div class="dd-stat-box"><div class="dd-stat-val">98%</div><div class="dd-stat-lbl">Recovery</div></div>
+                                <div class="dd-stat-box"><div class="dd-stat-val">8.5</div><div class="dd-stat-lbl">Sleep</div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW API Section (Enterprise Only) -->
+    <section class="health-journey-section section-std enterprise-only">
+        <div class="container">
+            <div class="api-showcase-container">
+                <div class="api-text-col">
+                    <h4>FOR DEVELOPERS</h4>
+                    <h2>Build on Top of LongevityAPI</h2>
+                    <p>Integrate our biological age algorithms directly into your corporate wellness app, EHR, or insurance workflow. Access our database of biomarker correlations with a simple REST API.</p>
+                    <ul class="api-checks">
+                        <li><i class="fas fa-check"></i> Real-time biological age scoring</li>
+                        <li><i class="fas fa-check"></i> Bulk patient analysis</li>
+                        <li><i class="fas fa-check"></i> Webhooks for alert triggers</li>
+                    </ul>
+                    <button class="btn" style="margin-top: 30px;" onclick="openModal()"><span>Contact Us</span></button>
+                </div>
+                <div class="api-visual-col">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="window-dot wd-red"></div>
+                            <div class="window-dot wd-yellow"></div>
+                            <div class="window-dot wd-green"></div>
+                            <div class="code-title">POST /api/v1/score</div>
+                        </div>
+                        <div class="code-content">
+                            <span class="c-kw">curl</span> -X POST https://api.longevityplan.ai/v1/score \<br>
+                            &nbsp;&nbsp;-H <span class="c-str">"Authorization: Bearer YOUR_KEY"</span> \<br>
+                            &nbsp;&nbsp;-d <span class="c-str">'{<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;"biomarkers": {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"hba1c": 5.2,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"vo2max": 48<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                            &nbsp;&nbsp;}'</span><br><br>
+                            <span class="c-punc">// Response</span><br>
+                            {<br>
+                            &nbsp;&nbsp;<span class="c-str">"status"</span>: <span class="c-str">"success"</span>,<br>
+                            &nbsp;&nbsp;<span class="c-str">"bio_age"</span>: 42,<br>
+                            &nbsp;&nbsp;<span class="c-str">"aging_rate"</span>: 0.85,<br>
+                            &nbsp;&nbsp;<span class="c-str">"recommendations"</span>: [<span class="c-str">"Increase Zone 2"</span>]<br>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section (Individual Only) -->
+    <section class="pricing-section section-alt individual-only" id="pricing-ind">
+        <div class="container">
+            <div class="text-center">
+                <h4>Membership Plans</h4>
+                <h2>Choose Your Path to Longevity</h2>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- Free Plan -->
+                <div class="price-card">
+                    <div class="pc-header">
+                        <div class="pc-title">Free</div>
+                        <div class="pc-price">$0</div>
+                        <p style="font-size: 0.8rem; margin:0;">FOREVER</p>
+                    </div>
+                    <div class="pc-body">
+                        <ul class="pc-features">
+                            <li>Research/Blog Access</li>
+                            <li>30 Day Trial</li>
+                        </ul>
+                        <button class="pc-btn" onclick="openModal()"><span>Join Now</span></button>
+                    </div>
+                </div>
+                <!-- Basic Plan -->
+                <div class="price-card">
+                    <div class="pc-header">
+                        <div class="pc-title">Basic</div>
+                        <div class="pc-price">$29.99</div>
+                        <p style="font-size: 0.8rem; margin:0;">PER MONTH</p>
+                    </div>
+                    <div class="pc-body">
+                        <ul class="pc-features">
+                            <li>Emergency Injury Hotline</li>
+                            <li>Monthly Coaching Session</li>
+                            <li>Mobile App Access</li>
+                        </ul>
+                        <button class="pc-btn" onclick="openModal()"><span>Join Now</span></button>
+                    </div>
+                </div>
+                <!-- Executive Plan -->
+                <div class="price-card highlight">
+                    <div class="ribbon">Waitlist</div>
+                    <div class="pc-header">
+                        <div class="pc-title">Executive</div>
+                        <div class="pc-price">TBD</div>
+                        <p style="font-size: 0.8rem; margin:0;">WAITLIST</p>
+                    </div>
+                    <div class="pc-body">
+                        <ul class="pc-features">
+                            <li>Everything in Basic</li>
+                            <li>Digital Twin (Up to 3 Data Sources)</li>
+                        </ul>
+                        <button class="pc-btn" onclick="openModal()"><span>Join Now</span></button>
+                    </div>
+                </div>
+                <!-- Premium Plan -->
+                <div class="price-card">
+                    <div class="ribbon">Waitlist</div>
+                    <div class="pc-header">
+                        <div class="pc-title">Premium</div>
+                        <div class="pc-price">TBD</div>
+                        <p style="font-size: 0.8rem; margin:0;">WAITLIST</p>
+                    </div>
+                    <div class="pc-body">
+                        <ul class="pc-features">
+                            <li>Everything in Basic</li>
+                            <li>Digital Twin (Unlimited Data Sources)</li>
+                        </ul>
+                        <button class="pc-btn" onclick="openModal()"><span>Join Now</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enterprise Pricing (Enterprise Only) -->
+    <section class="pricing-section section-alt enterprise-only" id="pricing-ent">
+        <div class="container">
+            <div class="text-center">
+                <h4>Partnerships</h4>
+                <h2>Enterprise Pricing</h2>
+            </div>
+            
+            <div class="price-card enterprise-card">
+                <div class="pc-title">Enterprise Partnership</div>
+                <div class="pc-price">Custom</div>
+                <ul>
+                    <li>Custom API Integration</li>
+                    <li>Custom in-Person or Video Coaching</li>
+                    <li>Custom Executive Consultation</li>
+                    <li>+ More</li>
+                </ul>
+                <button class="pc-btn" onclick="openModal()"><span>Contact Sales</span></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section section-std" id="team">
+        <div class="container">
+            <div class="team-layout">
+                <div class="team-intro">
+                    <h4>Our Team</h4>
+                    <h2>Leadership and Innovation</h2>
+                    <p>We are a dynamic group of professionals with a mission to democratize access to longevity and healthy aging.</p>
+                </div>
+                
+                <div class="team-list">
+                    <!-- Tony -->
+                    <div class="team-card">
+                        <div class="tc-img-wrap"><img src="https://zyq.has.mybluehost.me/website_c2dbbc7a/wp-content/uploads/2025/11/Tony-Medrano-Longevity-Plan.jpg" alt="Tony Medrano"></div>
+                        <div class="tc-content">
+                            <div class="tc-header">
+                                <div><span class="tc-number">01 | CEO & CO-FOUNDER</span><div class="tc-name">Tony Medrano</div></div>
+                                <a href="#" class="tc-linkedin"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                            <div class="tc-bio">Tony Medrano is an AI entrepreneur, former Naval officer, and 3x Ironman finisher known for combining resilience, leadership, and data-driven performance. He is the CEO and co-founder of LongevityPlan.AI.</div>
+                        </div>
+                    </div>
+                    <!-- Lina -->
+                    <div class="team-card">
+                        <div class="tc-img-wrap"><img src="https://ui-avatars.com/api/?name=Lina+Ramos&background=random" alt="Lina Ramos"></div>
+                        <div class="tc-content">
+                            <div class="tc-header">
+                                <div><span class="tc-number">02 | CO-FOUNDER</span><div class="tc-name">Lina Ramos</div></div>
+                                <a href="#" class="tc-linkedin"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                            <div class="tc-bio">Lina Ramos is a 36x Ironman Triathlon Finisher, having qualified for Kona World Championships 3x, including in 2026. She earned a BA from UC Berkeley and MBA from Stanford and has been a technology executive and entrepreneur in multiple venture-funded technology start-ups.</div>
+                        </div>
+                    </div>
+                    <!-- Felipe -->
+                    <div class="team-card">
+                        <div class="tc-img-wrap"><img src="https://ui-avatars.com/api/?name=Felipe+Loureiro&background=random" alt="Felipe Loureiro"></div>
+                        <div class="tc-content">
+                            <div class="tc-header">
+                                <div><span class="tc-number">03 | HEAD COACH</span><div class="tc-name">Felipe Loureiro</div></div>
+                                <a href="#" class="tc-linkedin"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                            <div class="tc-bio">Felipe is Head Coach and Owner of Breakaway Training, an international athletic coaching organization focusing on student-athletes, aspirational athletes, and elite endurance athletes. He has raced in over 600 triathlons, finished over 350 running and cycling races, and competed professionally in all triathlon disciplines.</div>
+                        </div>
+                    </div>
+                    <!-- Karim -->
+                    <div class="team-card">
+                        <div class="tc-img-wrap"><img src="https://zyq.has.mybluehost.me/website_c2dbbc7a/wp-content/uploads/2025/11/Karim-Godamunne-Longevity-Plan.jpg" alt="Karim Godamunne"></div>
+                        <div class="tc-content">
+                            <div class="tc-header">
+                                <div><span class="tc-number">04 | PHYSICIAN EXECUTIVE</span><div class="tc-name">Dr. Karim Godamunné</div></div>
+                                <a href="#" class="tc-linkedin"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                            <div class="tc-bio">Dr. Karim Godamunné is a physician executive, known for leading large-scale clinical transformation, virtual care innovation, and technology-enabled quality improvement.</div>
+                        </div>
+                    </div>
+                    <!-- Eric -->
+                    <div class="team-card">
+                        <div class="tc-img-wrap"><img src="https://ui-avatars.com/api/?name=Eric+Rightmire&background=random" alt="Dr. Eric Rightmire"></div>
+                        <div class="tc-content">
+                            <div class="tc-header">
+                                <div><span class="tc-number">05 | MEDICAL ADVISOR</span><div class="tc-name">Dr. Eric Rightmire</div></div>
+                                <a href="#" class="tc-linkedin"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                            <div class="tc-bio">Eric P Rightmire, MD, is a dual Board Certified Orthopedic Surgeon specializing in sports medicine and general orthopedics. He is also fellowship trained in sports injuries and arthritis of the shoulder, hip, and knee. He has been practicing at Plymouth Bay Orthopedic Associates since 2006.</div>
+                        </div>
+                    </div>
+                    <!-- Nicholas -->
+                    <div class="team-card">
+                        <div class="tc-img-wrap"><img src="https://ui-avatars.com/api/?name=Nicholas+Wehr&background=random" alt="Nicholas Wehr"></div>
+                        <div class="tc-content">
+                            <div class="tc-header">
+                                <div><span class="tc-number">06 | CHIEF TECHNOLOGY OFFICER</span><div class="tc-name">Nicholas Wehr</div></div>
+                                <a href="#" class="tc-linkedin"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                            <div class="tc-bio">Nicholas Wehr has worked with LongevityPlan.AI’s CEO and Co-Founder, Tony Medrano since 2014 when Tony hired him as EVP of Technology to build and lead a software development team at a mobile-platform-as-a-service company.</div>
+                        </div>
+                    </div>
+                    <!-- Ross -->
+                    <div class="team-card">
+                        <div class="tc-img-wrap"><img src="https://ui-avatars.com/api/?name=Ross+Stolsmark&background=random" alt="Ross Stolsmark"></div>
+                        <div class="tc-content">
+                            <div class="tc-header">
+                                <div><span class="tc-number">07 | HEAD OF MARKETING</span><div class="tc-name">Ross Stolsmark</div></div>
+                                <a href="#" class="tc-linkedin"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                            <div class="tc-bio">Ross brings more than 16 years of marketing leadership experience, including 7 years at Thermofisher Scientific within molecular diagnostics. He led the billion-dollar global launch of Amplitude, an automated respiratory testing platform.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section section-std">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 50px;">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-container">
+                <!-- Individual FAQs -->
+                <div class="faq-item individual-only" onclick="toggleFaq(this)">
+                    <div class="faq-question">What is LongevityPlan.AI? <span class="faq-toggle">+</span></div>
+                    <div class="faq-answer">LongevityPlan.AI is a precision health platform that combines advanced AI analytics, biomarker tracking, and expert coaching to create personalized longevity protocols designed to extend your healthspan and optimize performance.</div>
+                </div>
+                <div class="faq-item individual-only" onclick="toggleFaq(this)">
+                    <div class="faq-question">Who is this program designed for? <span class="faq-toggle">+</span></div>
+                    <div class="faq-answer">Our platform is designed for high-performing executives, athletes, and proactive individuals who want data-driven insights to optimize their biology, improve resilience, and extend their healthy years.</div>
+                </div>
+                <div class="faq-item individual-only" onclick="toggleFaq(this)">
+                    <div class="faq-question">How does the "Digital Twin" work? <span class="faq-toggle">+</span></div>
+                    <div class="faq-answer">We integrate data from wearables, lab tests, and lifestyle inputs to create a "digital twin" of your health. Our AI then generates dynamic, daily recommendations for nutrition, sleep, and exercise, supported by human coaching.</div>
+                </div>
+                <div class="faq-item individual-only" onclick="toggleFaq(this)">
+                    <div class="faq-question">Do I need to be an athlete? <span class="faq-toggle">+</span></div>
+                    <div class="faq-answer">No, you don't need to be an athlete. While we serve elite performers, our protocols are customized to your unique baseline and goals, whether that's managing executive stress, improving energy, or simply living healthier for longer.</div>
+                </div>
+
+                <!-- Enterprise FAQs -->
+                <div class="faq-item enterprise-only" onclick="toggleFaq(this)">
+                    <div class="faq-question">How does the API integration integrate with existing EHRs? <span class="faq-toggle">+</span></div>
+                    <div class="faq-answer">Our API uses standard FHIR-compliant data structures, making integration with major Electronic Health Record (EHR) systems like Epic and Cerner seamless and secure.</div>
+                </div>
+                <div class="faq-item enterprise-only" onclick="toggleFaq(this)">
+                    <div class="faq-question">Is the platform HIPAA and SOC2 compliant? <span class="faq-toggle">+</span></div>
+                    <div class="faq-answer">Yes, our entire infrastructure is HIPAA compliant and SOC2 Type II certified, ensuring the highest standards of data privacy and security for your organization.</div>
+                </div>
+                <div class="faq-item enterprise-only" onclick="toggleFaq(this)">
+                    <div class="faq-question">Can we white-label the coaching interface? <span class="faq-toggle">+</span></div>
+                    <div class="faq-answer">Absolutely. Our enterprise solution allows full white-labeling of both the user interface and the generated health reports, maintaining your brand identity throughout the user journey.</div>
+                </div>
+                <div class="faq-item enterprise-only" onclick="toggleFaq(this)">
+                    <div class="faq-question">What kind of support is available for enterprise integration? <span class="faq-toggle">+</span></div>
+                    <div class="faq-answer">We provide a dedicated technical account manager and 24/7 developer support to assist with API implementation, data mapping, and custom feature development.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <img src="https://zyq.has.mybluehost.me/website_c2dbbc7a/wp-content/uploads/2025/11/Longevity-Plan-AI-Logo-Light.webp" alt="Logo">
+                <p>Pioneering Biotechnology and AI for Longevity. Join us to add life to your years and years to your life.</p>
+            </div>
+            <div class="footer-col">
+                <h5>Learn</h5>
+                <ul>
+                    <li><a href="#innovations">Science</a></li>
+                    <li><a href="#digital">Platform</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Support</h5>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#" onclick="openLegalModal('privacy')">Privacy Policy</a></li>
+                    <li><a href="#" onclick="openLegalModal('terms')">Terms of Service</a></li>
+                </ul>
+            </div>
+            <!-- Partnerships column removed -->
+        </div>
+        <div class="footer-bottom">
+            <div>© 2025 LongevityPlan.AI All rights reserved</div>
+            <div style="display: flex; gap: 20px;">
+                <a href="#" onclick="openLegalModal('privacy')">Privacy</a>
+                <a href="#" onclick="openLegalModal('terms')">Terms</a>
+                <a href="#" onclick="openLegalModal('cookies')">Cookies</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Emergency Hotline Widget -->
+    <div class="hotline-widget" onclick="openModal()">
+        <i class="fas fa-phone-alt"></i>
+        <span>Emergency Hotline</span>
+    </div>
+
+    <!-- Modal Popup for Sales -->
+    <div class="modal-overlay" id="contactModal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <div class="text-center" style="margin-bottom: 25px;">
+                <h4 style="margin-bottom: 10px;">Get Started</h4>
+                <h2>Request Access</h2>
+            </div>
+            <form class="contact-form">
+                <div style="margin-bottom: 20px;">
+                    <label style="display:block; margin-bottom:10px; color:var(--text-muted); font-size:0.9rem;">Which plan interests you?</label>
+                    <div class="plan-selector">
+                        <label class="plan-option">
+                            <input type="radio" name="plan" value="executive">
+                            <div class="plan-card-opt">
+                                <i class="fas fa-briefcase"></i>
+                                <span>Executive</span>
+                            </div>
+                        </label>
+                        <label class="plan-option">
+                            <input type="radio" name="plan" value="performance" checked>
+                            <div class="plan-card-opt">
+                                <i class="fas fa-trophy"></i>
+                                <span>Athlete</span>
+                            </div>
+                        </label>
+                        <label class="plan-option">
+                            <input type="radio" name="plan" value="enterprise">
+                            <div class="plan-card-opt">
+                                <i class="fas fa-building"></i>
+                                <span>Corp</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Work Email" required>
+                <textarea placeholder="Tell us about your longevity goals..." rows="3"></textarea>
+                <button type="submit" class="btn" style="width: 100%;"><span>Submit Request</span></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal Popup for Legal (Privacy/Terms/Cookies) -->
+    <div class="modal-overlay" id="legalModal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeLegalModal()">&times;</span>
+            <div class="text-center" style="margin-bottom: 25px;">
+                <h2>Legal Policies</h2>
+            </div>
+            <div id="legalAccordions">
+                <div class="legal-accordion-item" id="acc-privacy">
+                    <div class="legal-accordion-header" onclick="toggleLegal('acc-privacy')">
+                        Privacy Policy <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="legal-accordion-body">
+                        <p><strong>1. Data Collection:</strong> We collect health data, biometric markers, and usage information to provide the LongevityPlan services.</p>
+                        <p><strong>2. Usage:</strong> Data is used solely for generating health insights and improving our AI models. We do not sell personal data to third parties.</p>
+                        <p><strong>3. Security:</strong> All data is encrypted at rest and in transit, adhering to HIPAA and SOC2 standards.</p>
+                    </div>
+                </div>
+                <div class="legal-accordion-item" id="acc-terms">
+                    <div class="legal-accordion-header" onclick="toggleLegal('acc-terms')">
+                        Terms of Service <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="legal-accordion-body">
+                        <p><strong>1. Acceptance:</strong> By using our platform, you agree to these terms.</p>
+                        <p><strong>2. Medical Disclaimer:</strong> LongevityPlan is for informational purposes and performance optimization, not a substitute for professional medical advice.</p>
+                        <p><strong>3. User Conduct:</strong> Users must provide accurate health information for optimal results.</p>
+                    </div>
+                </div>
+                <div class="legal-accordion-item" id="acc-cookies">
+                    <div class="legal-accordion-header" onclick="toggleLegal('acc-cookies')">
+                        Cookie Policy <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="legal-accordion-body">
+                        <p><strong>1. Essentials:</strong> We use cookies essential for site authentication and security.</p>
+                        <p><strong>2. Analytics:</strong> We use anonymized analytics cookies to understand usage patterns.</p>
+                        <p><strong>3. Management:</strong> You can control cookie preferences through your browser settings.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
