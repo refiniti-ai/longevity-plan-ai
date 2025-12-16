@@ -1,0 +1,194 @@
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-12-16T20:56:02.726Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-16T20:56:02.731Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-16T20:56:11.633Z] Running auto auth
+[debug] [2025-12-16T20:56:11.634Z] Running auto auth
+[debug] [2025-12-16T20:56:11.693Z] No OAuth tokens found
+[debug] [2025-12-16T20:56:11.698Z] No OAuth tokens found
+[debug] [2025-12-16T20:56:11.704Z] No OAuth tokens found
+[debug] [2025-12-16T20:56:11.724Z] No OAuth tokens found
+[debug] [2025-12-16T20:56:11.725Z] No OAuth tokens found
+[debug] [2025-12-16T20:56:11.727Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firestore.googleapis.com [none]
+[debug] [2025-12-16T20:56:11.728Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firestore.googleapis.com x-goog-quota-user=projects/longevity-plan-ai-1
+[debug] [2025-12-16T20:56:11.782Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-12-16T20:56:11.782Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/longevity-plan-ai-1
+[debug] [2025-12-16T20:56:11.785Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-12-16T20:56:11.786Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/longevity-plan-ai-1
+[debug] [2025-12-16T20:56:11.788Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-12-16T20:56:11.788Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/longevity-plan-ai-1
+[debug] [2025-12-16T20:56:11.790Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebaseio.com [none]
+[debug] [2025-12-16T20:56:11.790Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebaseio.com x-goog-quota-user=projects/longevity-plan-ai-1
+[debug] [2025-12-16T20:56:11.821Z] No OAuth tokens found
+[debug] [2025-12-16T20:56:11.822Z] No OAuth tokens found
+[debug] [2025-12-16T20:56:11.823Z] No OAuth tokens found
+[debug] [2025-12-16T20:56:11.826Z] No OAuth tokens found
+[debug] [2025-12-16T20:56:11.827Z] No OAuth tokens found
+[debug] [2025-12-16T20:56:11.827Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firestore.googleapis.com [none]
+[debug] [2025-12-16T20:56:11.827Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firestore.googleapis.com x-goog-quota-user=projects/longevity-plan-ai-1
+[debug] [2025-12-16T20:56:11.830Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-12-16T20:56:11.830Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/longevity-plan-ai-1
+[debug] [2025-12-16T20:56:11.834Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-12-16T20:56:11.834Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/longevity-plan-ai-1
+[debug] [2025-12-16T20:56:11.837Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-12-16T20:56:11.838Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/longevity-plan-ai-1
+[debug] [2025-12-16T20:56:11.840Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebaseio.com [none]
+[debug] [2025-12-16T20:56:11.840Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebaseio.com x-goog-quota-user=projects/longevity-plan-ai-1
+[debug] [2025-12-16T20:56:12.025Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firestore.googleapis.com 200
+[debug] [2025-12-16T20:56:12.025Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firestore.googleapis.com [omitted]
+[debug] [2025-12-16T20:56:12.074Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firestore.googleapis.com 200
+[debug] [2025-12-16T20:56:12.074Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firestore.googleapis.com [omitted]
+[debug] [2025-12-16T20:56:12.159Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebaseio.com 403
+[debug] [2025-12-16T20:56:12.159Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebaseio.com [omitted]
+[debug] [2025-12-16T20:56:12.183Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebaseio.com 403
+[debug] [2025-12-16T20:56:12.183Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebaseio.com [omitted]
+[debug] [2025-12-16T20:56:12.197Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/cloudfunctions.googleapis.com 200
+[debug] [2025-12-16T20:56:12.197Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2025-12-16T20:56:12.214Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-12-16T20:56:12.216Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-12-16T20:56:12.227Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-12-16T20:56:12.227Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-12-16T20:56:12.231Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-12-16T20:56:12.231Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebaseapphosting.googleapis.com [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-12-16T20:56:12.241Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-16T20:56:12.241Z] > authorizing via signed-in user (marketing@refiniti.ai)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-12-16T20:56:12.245Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-16T20:56:12.245Z] > authorizing via signed-in user (marketing@refiniti.ai)
+[debug] [2025-12-16T20:56:12.264Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-12-16T20:56:12.268Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-12-16T20:56:12.276Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/cloudfunctions.googleapis.com 200
+[debug] [2025-12-16T20:56:12.277Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/cloudfunctions.googleapis.com [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-12-16T20:56:12.298Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-16T20:56:12.299Z] > authorizing via signed-in user (marketing@refiniti.ai)
+[debug] [2025-12-16T20:56:12.299Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-16T20:56:12.299Z] > authorizing via signed-in user (marketing@refiniti.ai)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-12-16T20:56:12.302Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-16T20:56:12.302Z] > authorizing via signed-in user (marketing@refiniti.ai)
+[debug] [2025-12-16T20:56:12.302Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-16T20:56:12.303Z] > authorizing via signed-in user (marketing@refiniti.ai)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-12-16T21:02:14.575Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-16T21:02:14.577Z] > authorizing via signed-in user (marketing@refiniti.ai)
+[debug] [2025-12-16T21:02:14.587Z] No OAuth tokens found
+[debug] [2025-12-16T21:02:14.588Z] No OAuth tokens found
+[debug] [2025-12-16T21:02:14.589Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-16T21:02:14.589Z] > authorizing via signed-in user (marketing@refiniti.ai)
+[debug] [2025-12-16T21:02:14.590Z] No OAuth tokens found
+[debug] [2025-12-16T21:02:14.591Z] No OAuth tokens found
+[debug] [2025-12-16T21:02:14.591Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-16T21:02:14.592Z] > authorizing via signed-in user (marketing@refiniti.ai)
+[debug] [2025-12-16T21:02:14.593Z] No OAuth tokens found
+[debug] [2025-12-16T21:02:14.593Z] No OAuth tokens found
+[debug] [2025-12-16T21:02:14.593Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-16T21:02:14.593Z] > authorizing via signed-in user (marketing@refiniti.ai)
+[debug] [2025-12-16T21:02:14.607Z] No OAuth tokens found
+[debug] [2025-12-16T21:02:14.607Z] No OAuth tokens found
+[debug] [2025-12-16T21:02:14.608Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-16T21:02:14.608Z] > authorizing via signed-in user (marketing@refiniti.ai)
+[debug] [2025-12-16T21:02:14.609Z] No OAuth tokens found
+[debug] [2025-12-16T21:02:14.609Z] No OAuth tokens found
+[debug] [2025-12-16T21:02:14.609Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-16T21:02:14.609Z] > authorizing via signed-in user (marketing@refiniti.ai)
+[debug] [2025-12-16T21:02:14.610Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-16T21:02:14.610Z] > authorizing via signed-in user (marketing@refiniti.ai)
+[debug] [2025-12-16T21:02:14.612Z] No OAuth tokens found
+[debug] [2025-12-16T21:02:14.612Z] No OAuth tokens found
+[debug] [2025-12-16T21:02:14.612Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-16T21:02:14.612Z] > authorizing via signed-in user (marketing@refiniti.ai)
+[debug] [2025-12-16T21:02:14.613Z] No OAuth tokens found
+[debug] [2025-12-16T21:02:14.613Z] No OAuth tokens found
+[debug] [2025-12-16T21:02:14.613Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-16T21:02:14.613Z] > authorizing via signed-in user (marketing@refiniti.ai)
+[debug] [2025-12-16T21:02:14.614Z] No OAuth tokens found
+[debug] [2025-12-16T21:02:14.614Z] No OAuth tokens found
+[debug] [2025-12-16T21:02:14.614Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-16T21:02:14.614Z] > authorizing via signed-in user (marketing@refiniti.ai)
+[debug] [2025-12-16T21:02:14.619Z] No OAuth tokens found
+[debug] [2025-12-16T21:02:14.619Z] No OAuth tokens found
+[debug] [2025-12-16T21:02:14.619Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-16T21:02:14.619Z] > authorizing via signed-in user (marketing@refiniti.ai)
+[debug] [2025-12-16T21:02:14.620Z] No OAuth tokens found
+[debug] [2025-12-16T21:02:14.620Z] No OAuth tokens found
+[debug] [2025-12-16T21:02:14.620Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-16T21:02:14.620Z] > authorizing via signed-in user (marketing@refiniti.ai)
+[debug] [2025-12-16T21:02:14.622Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firestore.googleapis.com [none]
+[debug] [2025-12-16T21:02:14.623Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firestore.googleapis.com x-goog-quota-user=projects/longevity-plan-ai-1
+[debug] [2025-12-16T21:02:14.684Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-12-16T21:02:14.684Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/longevity-plan-ai-1
+[debug] [2025-12-16T21:02:14.688Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-12-16T21:02:14.688Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/longevity-plan-ai-1
+[debug] [2025-12-16T21:02:14.690Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-12-16T21:02:14.690Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/longevity-plan-ai-1
+[debug] [2025-12-16T21:02:14.692Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebaseio.com [none]
+[debug] [2025-12-16T21:02:14.693Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebaseio.com x-goog-quota-user=projects/longevity-plan-ai-1
+[debug] [2025-12-16T21:02:14.695Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firestore.googleapis.com [none]
+[debug] [2025-12-16T21:02:14.695Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firestore.googleapis.com x-goog-quota-user=projects/longevity-plan-ai-1
+[debug] [2025-12-16T21:02:14.697Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-12-16T21:02:14.697Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/longevity-plan-ai-1
+[debug] [2025-12-16T21:02:14.699Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-12-16T21:02:14.699Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/longevity-plan-ai-1
+[debug] [2025-12-16T21:02:14.701Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-12-16T21:02:14.701Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/longevity-plan-ai-1
+[debug] [2025-12-16T21:02:14.704Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebaseio.com [none]
+[debug] [2025-12-16T21:02:14.704Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebaseio.com x-goog-quota-user=projects/longevity-plan-ai-1
+[debug] [2025-12-16T21:02:14.977Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-12-16T21:02:14.978Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-12-16T21:02:15.028Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebaseio.com 403
+[debug] [2025-12-16T21:02:15.028Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebaseio.com [omitted]
+[debug] [2025-12-16T21:02:15.074Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-12-16T21:02:15.074Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-12-16T21:02:15.095Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebaseio.com 403
+[debug] [2025-12-16T21:02:15.095Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebaseio.com [omitted]
+[debug] [2025-12-16T21:02:15.103Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/cloudfunctions.googleapis.com 200
+[debug] [2025-12-16T21:02:15.103Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2025-12-16T21:02:15.112Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firestore.googleapis.com 200
+[debug] [2025-12-16T21:02:15.112Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firestore.googleapis.com [omitted]
+[debug] [2025-12-16T21:02:15.118Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firestore.googleapis.com 200
+[debug] [2025-12-16T21:02:15.118Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firestore.googleapis.com [omitted]
+[debug] [2025-12-16T21:02:15.120Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-12-16T21:02:15.121Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-12-16T21:02:15.122Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/cloudfunctions.googleapis.com 200
+[debug] [2025-12-16T21:02:15.122Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/cloudfunctions.googleapis.com [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-12-16T21:02:15.135Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-16T21:02:15.135Z] > authorizing via signed-in user (marketing@refiniti.ai)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-12-16T21:02:15.138Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-16T21:02:15.138Z] > authorizing via signed-in user (marketing@refiniti.ai)
+[debug] [2025-12-16T21:02:15.144Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-12-16T21:02:15.145Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/longevity-plan-ai-1/services/firebasedataconnect.googleapis.com [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-12-16T21:02:15.168Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-16T21:02:15.168Z] > authorizing via signed-in user (marketing@refiniti.ai)
+[debug] [2025-12-16T21:02:15.169Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-16T21:02:15.169Z] > authorizing via signed-in user (marketing@refiniti.ai)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-12-16T21:02:15.172Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-16T21:02:15.172Z] > authorizing via signed-in user (marketing@refiniti.ai)
+[debug] [2025-12-16T21:02:15.173Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-16T21:02:15.173Z] > authorizing via signed-in user (marketing@refiniti.ai)

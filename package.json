@@ -1,0 +1,11 @@
+{
+  "name": "longevity-plan-ai",
+  "version": "1.0.0",
+  "description": "Longevity Plan AI | Personalized Health and Performance Optimization",
+  "main": "main.js",
+  "scripts": {
+    "start": "echo 'No build process required.'"
+  },
+  "author": "",
+  "license": "ISC"
+}
