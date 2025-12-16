@@ -1,5 +1,13 @@
+# Defines the source directory for the site. For a static site with no build process,
+# this is the root of the repository.
+source: ""
+
+# Configures the collections of content for your site.
 collections_config:
+  # The 'pages' collection represents the main pages of your site.
   pages:
-    path: ""
+    # Specifies that this collection should be treated as output files with URLs.
+    output: true
+    # A pattern to find all HTML files in the source directory and its subdirectories.
     glob:
       - "**/*.html"
