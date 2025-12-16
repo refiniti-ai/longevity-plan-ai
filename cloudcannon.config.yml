@@ -1,13 +1,10 @@
-# Defines the source directory for the site. For a static site with no build process,
-# this is the root of the repository.
-source: ""
+# Be explicit: Tell CloudCannon the source and output are the same root directory.
+source: .
+output_path: .
 
-# Configures the collections of content for your site.
+# Find all HTML files in the root and treat them as site pages.
 collections_config:
-  # The 'pages' collection represents the main pages of your site.
   pages:
-    # Specifies that this collection should be treated as output files with URLs.
+    path: .
     output: true
-    # A pattern to find all HTML files in the source directory and its subdirectories.
-    glob:
-      - "**/*.html"
+    glob: ["*.html"]
