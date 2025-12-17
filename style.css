@@ -75,7 +75,7 @@ body.theme-blue {
     --node-dark-text: #334155;
     --node-dark-border: #cbd5e1;
 
-    --hero-overlay: linear-gradient(rgba(15, 20, 37, 0.7), rgba(15, 20, 37, 0.6));
+    --hero-overlay: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     
      /* Logo Filters - Keep Black */
      --logo-filter-header: brightness(0);
@@ -317,19 +317,26 @@ header {
 
 /* Hero */
 .hero {
-    position: relative; min-height: 90vh; display: flex; align-items: center;
-    background-size: cover; background-position: center; padding-top: 100px; overflow: hidden;
+    position: relative; 
+    min-height: 90vh; 
+    display: flex; 
+    align-items: center;
+    background-size: cover; 
+    background-position: top; 
+    padding-top: 100px; 
+    padding-bottom: 50px;
+    overflow: hidden;
     transition: background-image 0.5s ease;
 }
 /* Red Theme Hero Image (Individuals) */
 body:not(.theme-blue) .hero {
-    background-image: var(--hero-overlay), url('https://9000-firebase-longevity-plan-ai-1764134914338.cluster-gbjk7stgxjadcxgklzxmgbb56i.cloudworkstations.dev/Images/Longevity%20Plan%20Banner.png');
+    background-image: var(--hero-overlay), url('Images/Longevity Plan Banner.png');
 }
 /* Blue Theme Hero Image (Enterprise) */
 body.theme-blue .hero {
-    background-image: var(--hero-overlay), url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2070');
+    background-image: var(--hero-overlay), url('Images/Longevity Plan Banner.png');
 }
-.hero-content { max-width: 650px; position: relative; z-index: 2; padding-left: 20px; }
+.hero-content { max-width: 850px; position: relative; z-index: 2; padding-left: 20px; }
 .hero-btns { display: flex; gap: 20px; flex-wrap: wrap; margin-top: 30px; }
 .hero p { font-size: 1.1rem; line-height: 1.7; opacity: 0.9; max-width: 500px; color: #FFFFFF !important; }
 
