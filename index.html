@@ -73,7 +73,9 @@
     <section class="hero enterprise-only">
         <div class="container">
             <div class="hero-content">
-                <h1 class="editable">Empower Your Organization's Health</h1>
+                <h1 class="editable">
+                    Empower Your Organization's
+                </h1>
                 <p class="editable">Deliver the future of longevity and precision medicine to your installed user base or executive team with our secure, scalable API and coaching platform. For Personalized Health and Performance Optimization.</p>
                 <div class="hero-btns">
                     <button class="btn" onclick="openModal()"><span class="editable">Contact Sales</span></button>
@@ -205,7 +207,9 @@
                             <div class="dna-vertical-wrapper">
                                 <div class="dna-label-group dl-left" style="top: 15%; left: -80px; animation-delay: 0s;"><div class="dna-label editable">Resilience</div><div class="dna-line"></div></div>
                                 <div class="dna-label-group dl-right" style="top: 35%; right: -80px; animation-delay: 1s;"><div class="dna-line"></div><div class="dna-label editable">Vitality</div></div>
-                                <div class="dna-label-group dl-left" style="top: 55%; left: -80px; animation-delay: 2s;"><div class="dna-label editable">Regeneration</div><div class="dna-line"></div></div>
+                                <div class="dna-label-group dl-left" style="top: 55%; left: -80px; animation-delay: 2s;"><div class="dna-label editable">
+    Regeneration
+</div><div class="dna-line"></div></div>
                                 <div class="dna-label-group dl-right" style="top: 75%; right: -80px; animation-delay: 3s;"><div class="dna-line"></div><div class="dna-label editable">Energy</div></div>
                                 <div class="dna-container" id="dnaContainer"></div>
                             </div>
@@ -347,7 +351,9 @@
                     </div>
                     <div class="visual-container">
                         <div class="chart-blue-container">
-                            <div class="chart-header editable">This week longevity added:</div>
+                            <div class="chart-header editable">
+                                This week longevity added:
+                            </div>
                             <div class="chart-main-stat editable" id="chartMainStat">6 hours, 41 minutes</div>
                             <div class="chart-bars-area" id="chartBars">
                                 <div class="bar-group" onclick="updateChart(0, '2 hours, 10 minutes')"><div class="v-bar" style="height: 20%;"></div><div class="bar-label">Thu</div></div>
@@ -443,21 +449,7 @@
                             <div class="code-title editable">POST /api/v1/score</div>
                         </div>
                         <div class="code-content editable">
-                            <span class="c-kw">curl</span> -X POST https://api.longevityplan.ai/v1/score \<br />
-                              -H <span class="c-str">"Authorization: Bearer YOUR_KEY"</span> \<br />
-                              -d <span class="c-str">'{<br />
-                                "biomarkers": {<br />
-                                  "hba1c": 5.2,<br />
-                                  "vo2max": 48<br />
-                                }<br />
-                              }'</span><br /><br />
-                            <span class="c-punc">// Response</span><br />
-                            {<br />
-                              <span class="c-str">"status"</span>: <span class="c-str">"success"</span>,<br />
-                              <span class="c-str">"bio_age"</span>: 42,<br />
-                              <span class="c-str">"aging_rate"</span>: 0.85,<br />
-                              <span class="c-str">"recommendations"</span>: [<span class="c-str">"Increase Zone 2"</span>]<br />
-                            }
+                            <span class="c-kw">curl</span> -X POST https://api.longevityplan.ai/v1/score \<br /> -H <span class="c-str">"Authorization: Bearer YOUR_KEY"</span> \<br /> -d <span class="c-str">'{<br /> "biomarkers": {<br /> "hba1c": 5.2,<br /> "vo2max": 48<br /> }<br /> }'</span><br /><br /><span class="c-punc">// Response</span><br /> {<br /><span class="c-str">"status"</span>: <span class="c-str">"success"</span>,<br /><span class="c-str">"bio_age"</span>: 42,<br /><span class="c-str">"aging_rate"</span>: 0.85,<br /><span class="c-str">"recommendations"</span>: [<span class="c-str">"Increase Zone 2"</span>]<br /> }
                         </div>
                     </div>
                 </div>
